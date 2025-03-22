@@ -1,7 +1,25 @@
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { ThemeProvider } from '@/components/layout/theme-provider'; // ✅ Importar ThemeProvider
+import { ThemeProvider } from '@/components/layout/theme-provider'; 
+import '../globals.css';
+
+
+import { Poppins, JetBrains_Mono } from 'next/font/google';
+
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-poppins',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-jetbrainsMono',
+});
+
 
 export default async function LocaleLayout({
   children,
@@ -17,7 +35,7 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} suppressHydrationWarning> 
+    <html lang={locale} className={`${poppins.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
       <body>
         <ThemeProvider
           attribute="class"
