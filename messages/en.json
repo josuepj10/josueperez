@@ -1,7 +1,19 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
-    }
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "summary": "Summary",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "titlePrefix": "Hello I'm",
+    "name": "Josue Perez",
+    "role": "Informatic Engineering",
+    "description": "Passionate about building digital experiences that are clean, modern and meaningful. Always learning."
   }
-  
+}

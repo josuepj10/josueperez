@@ -1,20 +1,16 @@
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
-import { ModeToggle } from '@/components/layout/mode-toggle';
+import { ModeSwitcher } from '@/components/layout/mode-switcher';
+import { main } from 'framer-motion/client';
+import { Hero } from '../../components/home/hero';
 
 
  
 export default function HomePage() {
   const t = useTranslations('HomePage');
   return (
-    <div>
-      <h1>{t('title')}</h1>
-      <Link href="/about">{t('about')}</Link>
-      <h1 className="font-mono not-[]:text-lg">Hola mundo</h1>
-      <h1 className="font-primary text-lg border border-red-500">Hola mundo borde rojo</h1>
-
-      
-      <ModeToggle />
-    </div>
+    <main>
+      <Hero/>
+    </main>
   );
 }

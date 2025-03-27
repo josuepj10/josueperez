@@ -1,7 +1,19 @@
 {
-    "HomePage": {
-      "title": "Hola mundo!",
-      "about": "Ir a la página de acerca de"
-    }
+  "HomePage": {
+    "title": "Hola mundo!",
+    "about": "Ir a la página de acerca de"
+  },
+  "Nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "summary": "Resumen",
+    "work": "Trabajo",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "titlePrefix": "Hola, soy",
+    "name": "Josue Perez",
+    "role": "Ingeniería Informática",
+    "description": "Apasionado por construir experiencias digitales limpias, modernas y con sentido. Siempre aprendiendo."
   }
-  
+}

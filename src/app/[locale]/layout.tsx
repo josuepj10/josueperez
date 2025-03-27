@@ -5,7 +5,7 @@ import { routing } from '@/i18n/routing';
 import type { Metadata } from "next";
 import "../globals.css";
 import { ThemeProvider } from "@/components/layout/theme-provider";
-
+import { Header } from "@/components/layout/header"; // IMPORTA el header
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,7 +35,8 @@ export default async function LocaleLayout({
           disableTransitionOnChange
         >
           <NextIntlClientProvider>
-            {children}
+            <Header /> {/* Renderiza el Header */}
+            <main>{children}</main>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
