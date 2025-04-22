@@ -1,6 +1,6 @@
 "use client";
 
-import { Navbar } from "./navbar";
+import { Navbar } from "./Navbar";
 import { MobileNav } from "./mobile-nav";
 import { ModeSwitcher } from "./mode-switcher";
 import { LanguajeSwitcher } from "./languaje-switcher";
@@ -10,6 +10,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export const Header = () => {
+  
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 

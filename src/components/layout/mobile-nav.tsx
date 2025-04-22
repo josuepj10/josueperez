@@ -41,11 +41,8 @@ export const MobileNav = () => {
           <Link href="/" onClick={() => setIsOpen(false)}>
             {t("home")}
           </Link>
-          <Link href="/services" onClick={() => setIsOpen(false)}>
-            {t("services")}
-          </Link>
-          <Link href="/summary" onClick={() => setIsOpen(false)}>
-            {t("summary")}
+          <Link href="/experience" onClick={() => setIsOpen(false)}>
+            {t("experience")}
           </Link>
           <Link href="/work" onClick={() => setIsOpen(false)}>
             {t("work")}

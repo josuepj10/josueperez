@@ -26,16 +26,9 @@ export const Navbar = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/services" legacyBehavior passHref>
+          <Link href="/experience" legacyBehavior passHref>
             <NavigationMenuLink>
-              {t('services')}
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/summary" legacyBehavior passHref>
-            <NavigationMenuLink>
-              {t('summary')}
+              {t('experience')}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

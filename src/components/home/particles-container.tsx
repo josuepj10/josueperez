@@ -77,7 +77,7 @@ const ParticlesContainer = () => {
           default: "bounce",
         },
         random: false,
-        speed: 1,
+        speed: 0.5,
         straight: false,
       },
       number: {
@@ -85,7 +85,7 @@ const ParticlesContainer = () => {
           enable: true,
           width: 800,
         },
-        value: 80,
+        value: 30,
       },
       opacity: {
         value: 0.5,
