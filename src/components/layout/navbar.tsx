@@ -8,8 +8,8 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
-import { ModeSwitcher } from './mode-switcher';
-import { LanguajeSwitcher } from './languaje-switcher';
+import { ModeToggle } from './ModeToggle';
+import { LanguajeSwitcher } from './LanguajeSwitcher';
 import { useTranslations } from 'next-intl'; // Importa hook
 
 export const Navbar = () => {
@@ -33,6 +33,13 @@ export const Navbar = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <Link href="/about" legacyBehavior passHref>
+            <NavigationMenuLink>
+              {t('about')}
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/work" legacyBehavior passHref>
             <NavigationMenuLink>
               {t('work')}
@@ -50,7 +57,7 @@ export const Navbar = () => {
         {/* Controles: ModeSwitcher + LanguageSwitcher */}
         <NavigationMenuItem>
           <div className="flex items-center gap-2">
-            <ModeSwitcher />
+            <ModeToggle />
             <LanguajeSwitcher />
           </div>
         </NavigationMenuItem>

@@ -1,9 +1,9 @@
 "use client";
 
 import { Navbar } from "./Navbar";
-import { MobileNav } from "./mobile-nav";
-import { ModeSwitcher } from "./mode-switcher";
-import { LanguajeSwitcher } from "./languaje-switcher";
+import { MobileNav } from "./MobileNav";
+import { ModeToggle } from "./ModeToggle";
+import { LanguajeSwitcher } from "./LanguajeSwitcher";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
@@ -41,7 +41,7 @@ export const Header = () => {
 
         {/* Controles móviles */}
         <div className="flex items-center gap-2 md:hidden">
-          <ModeSwitcher />
+          <ModeToggle />
           <LanguajeSwitcher />
           <MobileNav />
         </div>

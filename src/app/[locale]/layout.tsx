@@ -4,7 +4,7 @@ import { routing } from '@/i18n/routing';
 
 import type { Metadata } from "next";
 import "../globals.css";
-import { ThemeProvider } from "@/components/layout/theme-provider";
+import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { Header } from "@/components/layout/Header"; // IMPORTA el header
 
 export const metadata: Metadata = {

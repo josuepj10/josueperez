@@ -7,19 +7,17 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { Briefcase, GraduationCap } from "lucide-react";
 
-
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export const Timeline = () => {
-
-  const t = useTranslations('Nav'); // Traducciones del grupo "Nav"
+  const t = useTranslations("Nav"); // Traducciones del grupo "Nav"
 
   return (
-    <div className="max-w-screen-xl mx-auto font-mono">
-      <h2 className="text-2xl md:text-4xl font-bold mb-8">
-      {t('experience')}.
+    <div className="max-w-screen-xl mx-auto font-mono mb-10">
+      <h2 className="text-2xl md:text-4xl font-bold mb-8 ml-3 md:ml-0">
+        {t("experience")}.
       </h2>
+
       <VerticalTimeline lineColor="var(--color-primary)">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"

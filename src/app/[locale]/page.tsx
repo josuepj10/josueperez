@@ -1,6 +1,7 @@
 import {useTranslations} from 'next-intl';
 import { Hero } from '../../components/home/HeroSection';
 import { Timeline } from '@/components/experience/ExperienceSection';
+import { About } from '@/components/about/AboutSection';
 
 
  
@@ -10,7 +11,7 @@ export default function HomePage() {
     <main>
       <Hero/>
       <Timeline/>
-      
+      <About/>
     </main>
   );
 }
