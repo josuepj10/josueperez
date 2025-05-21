@@ -45,11 +45,7 @@ const LocationGlobe = () => {
   }, [r]);
 
   return (
-    <div className="flex flex-col items-center justify-center py-10">
-      <div className="mb-4 flex items-center gap-2">
-        <MapPinIcon className="size-4" />
-        <h2 className="text-sm font-medium">Costa Rica</h2>
-      </div>
+    <div className="flex flex-col items-center justify-center ">
       <canvas
         ref={canvasRef}
         onPointerDown={(e) => {
